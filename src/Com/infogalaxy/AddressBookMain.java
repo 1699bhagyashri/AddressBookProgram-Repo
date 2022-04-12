@@ -147,7 +147,7 @@ public class AddressBookMain {
         AddressBookMain addressBookMain = new AddressBookMain();
         int ch;
         do{
-              System.out.println("1.Add contact \n2 edit contact \n3delete contact \n 4 showcontact \n 5 backuptofiles");
+              System.out.println("1.Add contact \n2 edit contact \n3delete contact \n 4 showcontact \n 5 backuptofiles \n 6 Restore contact from files");
               System.out.println("Enter your choice");
                ch=scanner.nextInt();
               switch (ch) {
@@ -166,10 +166,13 @@ public class AddressBookMain {
                       case 5:
                           addressBookMain.backupToFile();
                           break;
+                  case 6:
+                       addressBookMain.restoreFromFile();
+                       break;
               }
 
               }
-        while ( ch != 6);
+        while ( ch != 7);
     }
 
 }
