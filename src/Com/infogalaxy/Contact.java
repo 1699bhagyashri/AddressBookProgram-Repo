@@ -22,7 +22,7 @@ public class Contact {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public  void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -38,7 +38,7 @@ public class Contact {
         return city;
     }
 
-    public void setCity(String city) {
+    public  void setCity(String city) {
         this.city = city;
     }
 
